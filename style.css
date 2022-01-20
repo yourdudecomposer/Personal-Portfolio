@@ -302,6 +302,9 @@ margin-bottom: 20px;
         display: none;
     }
     #projects i{
+        position: relative;
+        bottom: 1px;
+        left: 2px;
         font-size: .6em;
     }
     /* SECTION-3 */
@@ -321,14 +324,17 @@ margin-bottom: 20px;
     #contact a {
         width: 50%;
         text-align: center;
-        font-size: .8em;
-        padding: 10px;
+        font-size: 1em;
+        padding: 25px;
         border-radius: 10px;
         position: relative;
         bottom: 0px;
+        box-shadow: 2px 2px 4px rgba(151, 151, 151, 0.3);
+
     } 
     footer p{
-font-size: .7em;
+font-size: .5em;
+padding:3px 5px;
     }
 
 }
