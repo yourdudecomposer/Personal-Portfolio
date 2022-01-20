@@ -202,13 +202,36 @@ footer p {
       
     }
 
+    #contact a {
+        font-size: 1em;
+        padding: 20px;
+        border-radius: 10px;
+        position: relative;
+        bottom: 39px;
+    } 
 
+}
+@media(max-width: 585px) {
+
+
+    #contact a {
+        font-size: .7em;
+        padding: 20px;
+        border-radius: 10px;
+        position: relative;
+        bottom: 39px;
+    } 
+    #contact p {
+        font-size: 1em;
+        padding: 20px;
+    
+    }
 }
 @media(max-width: 460px) {
 
     /* NAV */
     nav ul {
-        justify-content: center;
+        justify-content: space-evenly;
         margin-right: 0;
     }
 
@@ -245,7 +268,7 @@ footer p {
 
     .projects-grid {
         grid-template-columns: 1fr;
-        grid-gap: 30px;
+        grid-gap: 20px;
         justify-items: center;
         margin-top: 10px;
     }
@@ -264,11 +287,13 @@ footer p {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 80%;
+        width: 100%;
         height: 140px;
         margin-bottom: 40px;
     }
-
+.project-tile:nth-last-child(1){
+margin-bottom: 20px;
+}
     .project-tile p {
         font-size: 0.6em;
     }
@@ -276,5 +301,45 @@ footer p {
     #projects hr {
         display: none;
     }
+    #projects i{
+        font-size: .6em;
+    }
+    /* SECTION-3 */
+    #contact div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50vh;
+    }
+    #contact p {
+        font-size: .8em;
+        text-align: center;
+        padding: 20px;
+        text-shadow: 2px 2px 4px rgba(151, 151, 151, 0.3);
+    
+    }
+    #contact a {
+        width: 50%;
+        text-align: center;
+        font-size: .8em;
+        padding: 10px;
+        border-radius: 10px;
+        position: relative;
+        bottom: 0px;
+    } 
+    footer p{
+font-size: .7em;
+    }
 
+}
+
+@media(max-width: 377px){
+    #contact p {
+        font-size: .6em;
+        padding: 10px 0 0 0;
+    
+    }
+    footer p{
+        font-size: .5em;
+            }
 }
